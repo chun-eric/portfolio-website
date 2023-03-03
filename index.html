@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Eric's Portfolio</title>
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/345ef6c652.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+  <div class="container">
+
+    <header>
+    <nav> 
+      <div class="logo"><a href="#">EC</a></div>
+      <div class="menu">
+        <a href="#" class="active">Home</a> 
+        <a href="#">Skills</a> 
+        <a href="#">About</a> 
+        <a href="#">Portfolio</a>  
+        <!--Hamburger Menu-->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <div class="hero">
+              <div class="content">
+                <div class="details">
+                  <h2>Hi, I'm</h2>
+                  <h1 class="name"><span>Eric</span> Chun</h1>
+                  <h2 class="job"> HTML Email Developer</h2>
+                  <p> I specialize in the creation and deployment of email marketing campaigns.</p>
+                  <button class="hero-button"><a href="#"></a>Portfolio</button>
+                </div>
+              </div>
+              <div class="self-photo">
+                  <img src="" alt=""> Placeholder
+              </div>
+            </div>
+    </section>
+
+    <section>
+      <div class="skills-wrapper">
+        <div class="skills-header">
+          <h3>Skills</h3>
+          <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+
+              <div class="skills-card">
+                <img src="./logos/html-1.svg" alt="logo">
+                <p class="title">HTML</p>
+              </div>
+          
+              <div class="skills-card">
+                <img src="./logos/css-3.svg" alt="logo">
+                <p class="title">CSS</p>
+              </div>
+         
+              <div class="skills-card">
+                <img src="./logos/logo-javascript.svg" alt="logo">
+                <p class="title">JavaScript</p>
+              </div>
+        
+              <div class="skills-card">
+                <img src="./logos/photoshop-cc-4.svg" alt="logo">
+                <p class="title">Photoshop</p>
+              </div>
+          
+              <div class="skills-card">
+                <img src="./logos/figma-1.svg" alt="logo">
+                <p class="title">Figma</p>
+              </div>
+        
+              <div class="skills-card">
+                <img src="./logos/litmus.svg" alt="logo">
+                <p class="title">Litmus</p>
+              </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="about-me">
+          <div class="self-photo-2">
+            <img src="" alt="selfie-2">
+          </div>
+          <div class="bio">
+            <h3>About Me</h3>
+            <h2>Get To Know Me</h2>
+            <p>A HTML Email Developer with a comprehensive understanding of email design. From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
+            <button>Get In Touch</button>
+          </div>
+        </div>
+    </section>
+
+
+    <section>
+      <div class="portfolio">
+
+        <div div class="portfolio-title">
+            <h3>Portfolio</h3>
+            <h2>HTML Email Portfolio</h2>
+        </div>
+      
+        <div class="portfolio-filter">
+           <div class="portfolio-heading ">
+            <a href="" data-filter="" class="active">All</a>
+          </div>
+          <div class="portfolio-heading">
+            <a href="" data-filter=""> Newsletter</a>
+          </div>
+          <div class="portfolio-heading">
+            <a href="" data-filter="">Transactional</a>
+          </div>
+          <div class="portfolio-heading">
+            <a href="" data-filter="">Promotional</a>
+          </div>
+        </div>
+
+        <div class="portfolio-list">
+            <div class="portfolio-container">
+                <div class="portfolio-card">
+                  <a href="" data-filter="" class="active-card"><p>1</p></a>
+                </div>
+                <div class="portfolio-card">
+                  <a href="" data-filter="">2</a>
+                </div>
+                <div class="portfolio-card">
+                  <a href="" data-filter="">3</a>
+                </div>
+                <div class="portfolio-card">
+                  <a href="" data-filter="">4</a>
+                </div>
+                <div class="portfolio-card">
+                  <a href="" data-filter="">5</a>
+                </div>
+                <div class="portfolio-card">
+                  <a href="" data-filter="">6</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="portfolio-container">
+      
+      <div div class="portfolio-title">
+        <h3>Portfolio</h3>
+        <h2>HTML Email Portfolio</h2>
+      </div>
+
+      <ul class="gallery">
+        <li class="filter active" data-filter="all">All</li>
+        <li class="filter" data-filter="newsletter">Newsletter</li>
+        <li class="filter" data-filter="transactional">Transactional</li>
+        <li class="filter" data-filter="promotional">Promotional</li>
+      </ul>
+  
+      <div class="portfolio">
+  
+        <div class="itembox newsletter">
+          <img src="./images/cat-1.jpg" data-item="newsletter" alt="cat-1">
+        </div>
+        <div class="itembox newsletter">
+          <img src="./images/cat-2.jpg" data-item="newsletter" alt="cat-2">
+        </div>
+        <div class="itembox transactional">
+          <img src="./images/dog-1.jpg" data-item="transactional" alt="transactional-1">
+        </div>
+        <div class="itembox transactional">
+          <img src="./images/dog-2.jpg" data-item="transactional" alt="transactional-2">
+        </div>
+        <div class="itembox promotional">
+          <img src="./images/rabbit-1.jpg" data-item="promotional" alt="promotional-1">
+        </div>
+        <div class="itembox promotional">
+          <img src="./images/rabbit-2.jpg" data-item="promotional" alt="promotional-2">
+        </div>
+  
+  
+      </div>
+    </section>
+
+
+    <section >
+      <div class="footer">
+      <div class="footer-details">
+        <p>Website created by Eric Chun &#169 2023</p>
+        <div class="icons">
+          <i class="fa-brands fa-linkedin "></i>
+          <i class="fa-brands fa-facebook "></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  </div>
+
+  </body>
+</html> 

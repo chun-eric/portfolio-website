@@ -1,0 +1,550 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/* Complementary Colors
+*/
+
+:root {
+--main-font-color:  #DA8E03;
+--secondary-font-color:#9B7E46;
+--button-background-color: #F4B266;
+--complementary-color-1:  #02394A;
+--complementary-color-2: #043565;
+--background-color-1: #E2EFDE;
+--background-color-2:  #808F87;
+--background-color-3:  #AFD0BF;
+
+}
+  
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 700;
+  color: black;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 80px;
+
+}
+
+/* Main Container */
+.container {
+  min-height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 1200px;
+  padding: 20px 25px 20px 25px;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+
+/* Navbar */
+
+nav {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ 
+nav a { 
+ text-decoration: none;
+ padding: 0 18px 0 18px;
+  font-size: 16px;
+}
+
+nav .menu .active { 
+  color: var(--main-font-color);
+}
+
+nav a:hover {
+  background-color: white;
+  color: var(--main-font-color);
+}
+
+.logo a {
+  padding: 0;
+  font-size: 22px;
+ 
+}
+
+.logo a:hover {
+  color: black;
+}
+/* End of Navbar */
+
+
+
+/* Hero Section */ 
+.hero {
+  padding-top: 80px;
+  display: flex;
+}
+
+.hero h2 {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.hero h1, span {
+  font-size: 70px;
+}
+
+.hero span {
+  color: var(--main-font-color);
+ 
+}
+
+.hero .name {
+  align-items: left;
+  
+}
+
+.hero .job {
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.hero p {
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hero-button  {
+  padding: 15px 35px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--main-font-color);
+  color: white;
+  font-size: 18px;
+  transition: 300ms ease-in;
+}
+
+.hero-button:hover {
+  background-color: var(--complementary-color-1);
+  color: #ffffff;
+  border-color:var(--complementary-color-1);
+}
+
+.hero .content {
+  flex : 1;
+}
+
+.hero .self-photo {
+  flex : 1;
+  color: var(--main-font-color);
+  border: 1px solid var(--main-font-color);
+}
+/* End of Hero Section */
+
+
+/* Skills Section */
+.skills-wrapper {
+  margin-top: 180px;
+}
+
+.skills-header {
+  text-align: center;
+
+}
+
+.skills-header h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+  color: var(--main-font-color);
+}
+
+.skills-header h2 {
+  font-size: 35px;
+
+}
+
+
+.skills-container {
+  justify-content: center;;
+  padding: 56px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.skills-card {
+  padding: 30px 0;
+  margin: 40px;
+  border-color: rgb(141, 141, 141);
+  width: 280px;
+  height: 165px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  transition: transform 500ms ease;
+  border: 0.3px solid rgb(233, 231, 231);
+}
+
+.skills-card:hover {
+  transform: scale(1.05);
+
+}
+
+.skills-card p {
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.skills-card img {
+  margin-top: 10px;
+  width: 45px;
+  height: 45px;
+}
+/* End of Skills Section */
+
+
+/* About me */
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 120px;;
+  padding-bottom: 120px;
+  gap: 6px;
+}
+
+.self-photo-2 {
+  border: 1px solid var(--main-font-color);
+  width: 431px;
+  height: 502px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.self-photo-2 img {
+  /* add selfie pic*/
+}
+
+.bio {
+  width: 491px;
+  height: 498px;
+  padding-left: 40px;
+}
+
+.bio h3 {
+  font-size: 25px;
+  color: var(--main-font-color);
+  padding-bottom: 15px;
+  
+}
+
+.bio h2 {
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+.bio p {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #fff;
+    text-align: left;
+    color: #6f6b80;
+}
+
+
+
+.bio > button {
+  padding: 13px 35px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--main-font-color);
+  color: white;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: 300ms ease-in;
+}
+
+.bio > button:hover {
+  background-color: var(--complementary-color-1);
+  color: #ffffff;
+  border-color:var(--complementary-color-1);
+  
+}
+/* End of About me */
+
+
+/* Porfolio */
+.portfolio {
+ justify-content: center;
+ margin: 0 auto;
+ margin-bottom: 100px;
+ padding-bottom: 50px;
+}
+
+.portfolio-title  {
+  margin-top: 110px;
+  text-align: center;
+}
+
+.portfolio-title h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+  color: var(--main-font-color);
+  align-items: center;
+}
+
+.portfolio-title  h2 {
+  font-size: 35px;
+  align-items: center;
+  text-align: center;
+}
+
+
+.portfolio-filter {
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;  
+}
+
+.portfolio-heading {
+  padding: 0px 15px;
+
+}
+
+.portfolio-heading .active {
+  color: var(--main-font-color);
+}
+
+.portfolio-filter  a {
+  text-decoration: none;
+  padding: 16px;
+}
+
+.portfolio-filter  a:hover {
+  transition: 200ms ease;
+  color: var(--main-font-color);
+}
+
+/* Portfolio list */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+}
+
+.portfolio-container {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+.portfolio-card {
+  border: 1px solid var(--main-font-color);
+  width: 346px;
+  height: 462px;
+  border-radius: 6px;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 5px;
+  
+}
+
+
+.portfolio-card a {
+text-decoration: none;
+vertical-align: middle;
+}
+
+.portfolio-card a:hover {
+  
+}
+
+
+/* End of Portfolio list */
+/* End of Portfolio*/
+
+/* Porfolio  v2*/
+.portfolio-container {
+ padding: 50px 0px 185px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 40px auto;
+}
+
+li {
+  list-style: none;
+}
+
+.portfolio-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 25px;
+}
+
+.portfolio-container ul li {
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 5px;
+  border-bottom: 3px solid transparent;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.portfolio-container ul li.active {
+  border-color: #772fed;
+  color: #8874ef;
+}
+
+.portfolio {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio .itembox {
+  position: relative;
+  width: 346px;
+  height: 460px;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  gap: 15px;
+  display: block;
+}
+
+.portfolio .itembox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover */
+  object-fit: contain;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.portfolio-container .portfolio .itembox.show {
+  animation: show .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+
+.portfolio-container .portfolio .itembox.hide {
+  animation: hide .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+
+/* @media(max-width: 468px) {
+  .portfolio .itembox {
+    width: 320px;
+    height: 420px;
+  }
+} */
+
+
+
+/* Porfolio  v2*/
+
+/* Footer */
+.footer {
+display: flex;
+justify-content: start;
+align-items: left;
+text-align: left;
+padding-bottom: 50px;
+width: 100%;
+height: 100%;
+
+}
+
+.footer-details {
+padding-left: 0;
+top: 0;
+
+}
+
+.footer-details p {
+ align-items: left;
+  font-size: 16px;
+  display: block;
+  color: black;
+  
+}
+
+.icons i {
+  margin-top: 15px;
+  margin-right:6px;
+  font-size: 28px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+/* End of Footer */
