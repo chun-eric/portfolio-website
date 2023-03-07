@@ -1,5 +1,36 @@
 'use strict';
 
+
+/* Toggling Responsive Navbar on Mobile */
+//selecting elements
+const bar = document.getElementById('bar');
+const navbar = document.getElementById('navbar');
+const close = document.getElementById('close');
+console.log(close);
+
+bar.addEventListener("click", () => {
+    navbar.classList.add('activate');
+})
+
+close.addEventListener('click', () => {
+    navbar.classList.remove('activate')
+})
+
+
+
+
+
+
+/* Dark Mode */
+
+
+
+
+
+
+
+/* Portfolio Works */
+
 //selecting elements
 const gallery = document.querySelector(".gallery");
 const itemboxes = document.querySelectorAll(".itembox");
