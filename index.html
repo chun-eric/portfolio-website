@@ -50,7 +50,7 @@
   <body>
 
   <!------ Main Container  ----->
-  <div class="container">
+
 
 
 
@@ -68,13 +68,16 @@
               <a href="#" class="active">Home</a> 
             </li>
             <li>
-              <a href="#">Skills</a> 
-            </li>
-            <li>
               <a href="#">About</a> 
             </li>
             <li>
+              <a href="#">Skills</a> 
+            </li>
+            <li>
               <a href="#">Portfolio</a> 
+            </li>
+            <li>
+              <a href="#">Contact</a> 
             </li>
             <li>
               <a href="#">
@@ -107,7 +110,7 @@
 
 
     <!------ Hero Section  -----> 
-    <section>
+    <section class="hero-background">
         <div class="hero">
               <div class="content">
                   <h2 class="hello">Hello, I'm</h2>
@@ -119,10 +122,12 @@
                   </button>
               </div>
               <div class="self-photo">
-                <img src="./images/transparent-image-holder-two.jpg" alt="self-logo">
+                <img src="./images/hero-image-transparent.png" alt="self-logo">
               </div>
         </div>
     </section>
+
+
 
 
     <!------ About Me  -----> 
@@ -130,7 +135,7 @@
 
       <div class="about-me">
 
-        <div class="about-me-title">
+        <div class="section-title">
           <h2 class="title">About Me</h2>
         </div>
 
@@ -150,9 +155,8 @@
 
       <div class="skills-wrapper">
 
-        <div class="skills-header">
-          <h3 class="skills">Skills</h3>
-          <h2 class="my__skills">My Skills</h2>
+        <div class="skills-title">
+          <h3 class="title">Skills</h3>
         </div>
 
 
@@ -197,50 +201,43 @@
 
     <!------ Portfolio  -----> 
     <section>
+
       <div class="portfolio">
 
-        <div div class="portfolio-title">
-            <h3>Portfolio</h3>
-            <h2>HTML Email Portfolio</h2>
+        <div class="portfolio-title">
+            <h3 class="title">Portfolio</h3>
         </div>
       
-        <div class="portfolio-filter">
-           <div class="portfolio-heading ">
-            <a href="" data-filter="" class="active">All</a>
-          </div>
-          <div class="portfolio-heading">
-            <a href="" data-filter=""> Newsletter</a>
-          </div>
-          <div class="portfolio-heading">
-            <a href="" data-filter="">Transactional</a>
-          </div>
-          <div class="portfolio-heading">
-            <a href="" data-filter="">Promotional</a>
-          </div>
-        </div>
+        <ul class="gallery">
+          <li class="filter active" data-filter="all">All</li>
+          <li class="filter" data-filter="newsletter">Newsletter</li>
+          <li class="filter" data-filter="transactional">Transactional</li>
+          <li class="filter" data-filter="promotional">Promotional</li>
+        </ul>
 
         <div class="portfolio-list">
-            <div class="portfolio-container">
-                <div class="portfolio-card">
-                  <a href="" data-filter="" class="active-card"><p>1</p></a>
-                </div>
-                <div class="portfolio-card">
-                  <a href="" data-filter="">2</a>
-                </div>
-                <div class="portfolio-card">
-                  <a href="" data-filter="">3</a>
-                </div>
-                <div class="portfolio-card">
-                  <a href="" data-filter="">4</a>
-                </div>
-                <div class="portfolio-card">
-                  <a href="" data-filter="">5</a>
-                </div>
-                <div class="portfolio-card">
-                  <a href="" data-filter="">6</a>
-                </div>
-            </div>
+           
+          <div class="itembox newsletter">
+            <img src="./images/cat-1.jpg" data-item="newsletter" alt="cat-1">
+          </div>
+          <div class="itembox newsletter">
+            <img src="./images/cat-2.jpg" data-item="newsletter" alt="cat-2">
+          </div>
+          <div class="itembox transactional">
+            <img src="./images/dog-1.jpg" data-item="transactional" alt="transactional-1">
+          </div>
+          <div class="itembox transactional">
+            <img src="./images/dog-2.jpg" data-item="transactional" alt="transactional-2">
+          </div>
+          <div class="itembox promotional">
+            <img src="./images/rabbit-1.jpg" data-item="promotional" alt="promotional-1">
+          </div>
+          <div class="itembox promotional">
+            <img src="./images/rabbit-2.jpg" data-item="promotional" alt="promotional-2">
+          </div>
+  
         </div>
+
       </div>
     </section>
 
@@ -250,8 +247,7 @@
     <section class="portfolio-container">
       
       <div div class="portfolio-title">
-        <h3>Portfolio</h3>
-        <h2>HTML Email Portfolio</h2>
+        <h3 class="title">Portfolio</h3>
       </div>
 
       <ul class="gallery">
@@ -298,8 +294,15 @@
       </div>
     </div>
   </section>
+
+
+  <footer class="main-footer">
+
+
+
+  </footer>
   
-  </div>
+
 
   </body>
 </html> 

@@ -43,7 +43,7 @@ body, html {
   min-height: 100%;
   width: 100%;
   max-height: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   padding: 20px 25px 20px 25px;
   justify-content: center;
   margin: 0 auto;
@@ -214,14 +214,30 @@ body, html {
 
 
 /* Hero Section */ 
+.hero-background {
+  width: 100%;
+  background-image: url('./images/background\ pattern.svg');
+  left: 10;
+  top:60;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 .hero {
+
   margin-top: 100px;
   display: flex;
   margin: 50px 70px 30px 60px;
   display: flex;
   justify-content: space-between;
+  
 }
+
+
 
 .hero .content {
   flex: 1.5;
@@ -451,6 +467,243 @@ body, html {
 /* End of Hero Section */
 
 
+
+
+
+/* About me */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 150px;;
+  padding-bottom: 100px;
+  gap: 6px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:  center;
+  vertical-align: middle;
+  margin: 40px 0 40px 0;
+  
+ 
+}
+
+.section-title .title {
+  display: block;
+  font-size: 42px;
+  text-align:  center;
+  position: relative;
+  width: 40%; /* heading with is 40% of parent element */
+  padding-bottom: 6px;
+} 
+
+
+.section-title .title::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0; 
+  left: 46%; /* sets to 35% left of the parent container */ 
+  height: 3px;
+  width: 35%; /* sets underline width to 50% of parent element */
+  transform: translateX(-46%); /* this allows us to keep the same x position relative to its parent when resizing */
+  background-color: var(--main-font-color);
+  
+}
+
+.about-me .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+
+.about-me .bio .bio-info {
+    font-family: 'League Spartan', serif;
+    overflow-x: hidden;
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    word-wrap: break-word;
+    font-weight: normal;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #43414b;
+    line-height: 1.7;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+}
+
+
+.bio > button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--main-font-color);
+  color: white;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: 300ms ease-in;
+  cursor: pointer;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.06);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.bio > button:hover {
+  background-color: var(--complementary-color-1);
+  color: #ffffff;
+  border-color:var(--complementary-color-1);
+  
+}
+
+@media (max-width: 799px) {
+  .about-me {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none !important;
+  }
+
+  .section-title .title {
+    align-items: center;
+    font-size: 42px;
+  }
+
+  .section-title .title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0; 
+    left: 30%; /* sets to 35% left of the parent container */ 
+    height: 3px;
+    width: 60%; /* sets underline width to 50% of parent element */
+    transform: translateX(-30%); /* this allows us to keep the same x position relative to its parent when resizing */
+    height: 3px;
+    background-color: var(--main-font-color);
+    
+  }
+
+  .about-me .bio {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: 80%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+  
+  }
+
+  .about-me .bio .bio-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-me .bio button {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 477px) {
+  .about-me {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none !important;
+  }
+
+  .section-title .title {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .about-me .bio {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+  
+  }
+
+  .about-me .bio .bio-info {
+    text-align: center;
+    width: 100%;
+   
+  }
+
+  .about-me .bio button {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title .title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0; 
+    left: 30%; /* sets to 35% left of the parent container */ 
+    height: 3px;
+    width: 60%; /* sets underline width to 50% of parent element */
+    transform: translateX(-30%); /* this allows us to keep the same x position relative to its parent when resizing */
+    height: 3px;
+    background-color: var(--main-font-color);
+    
+  }
+}
+/* End of About me */
+
+
+
+
+
+
 /* Skills Section */
 .skills-wrapper {
   margin-top: 180px;
@@ -459,31 +712,43 @@ body, html {
   text-align: center;
 }
 
-.skills-wrapper .skills-header {
-  margin-top: 30px;
-  gap: 30px;
-  text-align: center;
+.skills-wrapper .skills-title {
+  display: flex;
   align-items: center;
   justify-content: center;
+  text-align:  center;
+  vertical-align: middle;
+  margin: 40px 0 40px 0;
 
 }
 
-.skills-wrapper .skills-header .skills {
-  font-size: 25px;
-  margin-bottom: 12px;
-  color: var(--main-font-color);
+
+.skills-wrapper .skills-title .title {
+  display: inline-block;
+  font-size: 42px;
+  text-align:  center;
+  position: relative;
+  width: 40%; /* heading with is 40% of parent element */
+  padding-bottom: 6px;
 }
 
-.skills-wrapper .skills-header .my__skills {
-  margin-top: 20px;
-  font-size: 35px;
+.skills-wrapper .skills-title .title::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0; 
+  height: 3px;
+  left: 47%;
+  width: 15%; /* sets underline width to 50% of parent element */
+  transform: translateX(-47%); /* this allows us to keep the same x position relative to its parent when resizing */
+  height: 3px;
+  background-color: var(--main-font-color);
 }
 
 
 
 .skills-container {
   justify-content: center;;
-  padding: 56px 0;
+  padding: 16px 0;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -527,6 +792,37 @@ body, html {
 }
 
 @media (max-width: 799px) {
+  .skills-wrapper .skills-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    vertical-align: middle;
+    margin: 40px 0 40px 0;
+  
+  }
+  
+  
+  .skills-wrapper .skills-title .title {
+    display: inline-block;
+    font-size: 42px;
+    text-align:  center;
+    position: relative;
+    width: 40%; /* heading with is 40% of parent element */
+    padding-bottom: 6px;
+  }
+  
+  .skills-wrapper .skills-title .title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0; 
+    height: 3px;
+    left: 47%;
+    width: 15%; /* sets underline width to 50% of parent element */
+    transform: translateX(-47%); /* this allows us to keep the same x position relative to its parent when resizing */
+    height: 3px;
+    background-color: var(--main-font-color);
+  }
 }
 
 
@@ -534,6 +830,38 @@ body, html {
   .skills-wrapper {
     margin: 0 auto;
     padding: 0px;
+  }
+
+  .skills-wrapper .skills-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    vertical-align: middle;
+    margin: 40px 0 40px 0;
+  
+  }
+  
+  
+  .skills-wrapper .skills-title .title {
+    display: inline-block;
+    font-size: 42px;
+    text-align:  center;
+    position: relative;
+    width: 40%; /* heading with is 40% of parent element */
+    padding-bottom: 6px;
+  }
+  
+  .skills-wrapper .skills-title .title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0; 
+    height: 3px;
+    left: 47%;
+    width: 15%; /* sets underline width to 50% of parent element */
+    transform: translateX(-47%); /* this allows us to keep the same x position relative to its parent when resizing */
+    height: 3px;
+    background-color: var(--main-font-color);
   }
 
   .skill-container {
@@ -555,240 +883,59 @@ body, html {
 /* End of Skills Section */
 
 
-/* About me */
-.about-me {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding-top: 150px;;
-  padding-bottom: 100px;
-  gap: 6px;
-}
-
-.about-me-title {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align:  center;
-  vertical-align: middle;
-  margin: 40px 0 40px 0;
-  
- 
-}
-
-.about-me-title .title {
-  display: inline-block;
-  font-size: 32px;
-  text-align:  center;
-  position: relative;
-  width: 40%; /* heading with is 40% of parent element */
-  padding-bottom: 6px;
-} 
 
 
-.about-me-title .title::after {
-  content: ' ';
-  position: absolute;
-  bottom: 0; 
-  left: 35%; /* sets to 35% left of the parent container */ 
-  height: 3px;
-  width: 50%; /* sets underline width to 50% of parent element */
-  transform: translateX(-35%); /* this allows us to keep the same x position relative to its parent when resizing */
-  height: 3px;
-  background-color: var(--main-font-color);
-  
-}
-
-.about-me .bio {
-  flex: 1.5;
-  justify-content: center;
-  align-items: center;
-  padding-left: 20px;
-  margin: 40px 0 40px 0;
-}
 
 
-.about-me .bio .bio-info {
-    font-family: 'League Spartan', serif;
-    overflow-x: hidden;
-    width: 80%;
-    font-size: 19px;
-    line-height: 30px;
-    word-wrap: break-word;
-    font-weight: normal;
-    background-color: #fff;
-    text-align: left;
-    color: #43414b;
-    line-height: 1.6;
-    
-}
 
 
-.bio > button {
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 25px;
-  border: none;
-  background-color: var(--main-font-color);
-  color: white;
-  font-size: 18px;
-  margin-top: 30px;
-  transition: 300ms ease-in;
-  cursor: pointer;
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.06);
-}
 
-.bio > button:hover {
-  background-color: var(--complementary-color-1);
-  color: #ffffff;
-  border-color:var(--complementary-color-1);
-  
-}
 
-@media (max-width: 799px) {
-  .about-me {
-    margin-top: 30px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .about-me-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border: none !important;
-  }
-
-  .about-me-title .title {
-    align-items: center;
-  }
-
-  .about-me .bio {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    height: 80%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-left: 0px !important;
-    padding-left: 0px !important;
-  
-  }
-
-  .about-me .bio .bio-info {
-    text-align: center;
-    width: 100%;
-  }
-
-  .about-me .bio button {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 477px) {
-  .about-me {
-    margin-top: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  .about-me-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border: none !important;
-  }
-
-  .about-me-title .title {
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .about-me .bio {
-    padding-top: 2px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-left: 0px !important;
-    padding-left: 0px !important;
-  
-  }
-
-  .about-me .bio .bio-info {
-    text-align: center;
-    width: 100%;
-   
-  }
-
-  .about-me .bio button {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-me-title .title::after {
-    content: ' ';
-    position: absolute;
-    bottom: 0; 
-    left: 30%; /* sets to 35% left of the parent container */ 
-    height: 3px;
-    width: 60%; /* sets underline width to 50% of parent element */
-    transform: translateX(-30%); /* this allows us to keep the same x position relative to its parent when resizing */
-    height: 3px;
-    background-color: var(--main-font-color);
-    
-  }
-}
-
-/* End of About me */
 
 
 /* Porfolio */
 .portfolio {
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
  justify-content: center;
  margin: 0 auto;
+ padding-top: 150px;;
  margin-bottom: 100px;
- padding-bottom: 50px;
+
 }
 
 .portfolio-title  {
-  margin-top: 110px;
-  text-align: center;
+  width: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:  center;
+  margin-bottom: 20px;
+
 }
 
-.portfolio-title h3 {
-  font-size: 25px;
-  margin-bottom: 12px;
-  color: var(--main-font-color);
-  align-items: center;
+.portfolio-title .title {
+  display: block;
+  font-size: 42px;
+  text-align: center;
+  position: relative;
+  width: 40%; /* heading with is 40% of parent element */
+  padding-bottom: 6px;
 }
 
-.portfolio-title  h2 {
-  font-size: 35px;
-  align-items: center;
-  text-align: center;
+.portfolio-title .title::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0; 
+  left: 47%; /* sets to 35% left of the parent container */ 
+  height: 3px;
+  width: 30%; /* sets underline width to 50% of parent element */
+  transform: translateX(-47%); /* this allows us to keep the same x position relative to its parent when resizing */
+  background-color: var(--main-font-color);
+  
 }
 
 
@@ -801,9 +948,10 @@ body, html {
   font-size: 14px;  
 }
 
-.portfolio-heading {
-  padding: 0px 15px;
-
+.portfolio-filter  .portfolio-heading a {
+  padding: 0px 35px;
+  margin: 0 10px;
+  font-size: 20px;
 }
 
 .portfolio-heading .active {
@@ -822,18 +970,23 @@ body, html {
 
 /* Portfolio list */
 .portfolio-list {
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-container {
+  display: flex;
   border: 1px solid black;
-  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
   
 }
 
@@ -856,6 +1009,14 @@ vertical-align: middle;
 }
 
 .portfolio-card a:hover {
+  
+}
+
+@media (max-width: 799px) {
+
+}
+
+@media (max-width: 477px) {
   
 }
 
