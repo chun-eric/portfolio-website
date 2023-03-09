@@ -202,7 +202,7 @@
     <!------ Portfolio  -----> 
     <section>
 
-      <div class="portfolio">
+      <div class="portfolio-container">
 
         <div class="portfolio-title">
             <h3 class="title">Portfolio</h3>
@@ -215,10 +215,13 @@
           <li class="filter" data-filter="promotional">Promotional</li>
         </ul>
 
-        <div class="portfolio-list">
+
+        <div class="portfolio">
            
           <div class="itembox newsletter">
-            <img src="./images/cat-1.jpg" data-item="newsletter" alt="cat-1">
+            <a href="#" target="_blank">
+              <img src="./images/cat-1.jpg" data-item="newsletter" alt="cat-1">
+            </a>
           </div>
           <div class="itembox newsletter">
             <img src="./images/cat-2.jpg" data-item="newsletter" alt="cat-2">
@@ -243,63 +246,44 @@
 
 
 
-    <!------ Portfolio -----> 
-    <section class="portfolio-container">
-      
-      <div div class="portfolio-title">
-        <h3 class="title">Portfolio</h3>
-      </div>
-
-      <ul class="gallery">
-        <li class="filter active" data-filter="all">All</li>
-        <li class="filter" data-filter="newsletter">Newsletter</li>
-        <li class="filter" data-filter="transactional">Transactional</li>
-        <li class="filter" data-filter="promotional">Promotional</li>
-      </ul>
   
-      <div class="portfolio">
-  
-        <div class="itembox newsletter">
-          <img src="./images/cat-1.jpg" data-item="newsletter" alt="cat-1">
-        </div>
-        <div class="itembox newsletter">
-          <img src="./images/cat-2.jpg" data-item="newsletter" alt="cat-2">
-        </div>
-        <div class="itembox transactional">
-          <img src="./images/dog-1.jpg" data-item="transactional" alt="transactional-1">
-        </div>
-        <div class="itembox transactional">
-          <img src="./images/dog-2.jpg" data-item="transactional" alt="transactional-2">
-        </div>
-        <div class="itembox promotional">
-          <img src="./images/rabbit-1.jpg" data-item="promotional" alt="promotional-1">
-        </div>
-        <div class="itembox promotional">
-          <img src="./images/rabbit-2.jpg" data-item="promotional" alt="promotional-2">
-        </div>
-  
-  
-      </div>
-    </section>
 
-
-    <section >
-      <div class="footer">
-      <div class="footer-details">
-        <p>Website made by Eric Chun &#169 2023</p>
-        <div class="icons">
-          <i class="fa-brands fa-linkedin "></i>
-          <i class="fa-brands fa-facebook "></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+  <!-- Footer v2-->
   <footer class="main-footer">
+    <div class="main-container">
 
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading-sm">Social</h2>
+          <div class="social-icons">
+            <a href="" target="_blank">
+              <img class="icon" src="./icons/black-linkedin.png" alt="">
+            </a>
+            <a href="" target="_blank">
+              <img class="icon" src="./icons/black-twitter.png" alt="">
+            </a>
+            <a href="" target="_blank">
+              <img class="icon" src="./icons/black-github.png" alt="">
+            </a>
+          </div>
+        </div>
 
+        <div class="main-footer__row main-footer__row-2">
+          <h2 class="heading-sm">Eric Chun</h2>
+          <p class="short_description">An Email Developer focused on bringing really good email to all emails</p>
+        </div>
 
+      </div>
+
+      <div class="main-footer__lower">
+        <p >
+          &#169; Copyright
+          <script>document.write(new Date().getFullYear())</script>. Made by  <a class="name" href="" target="_blank"> Eric Chun</a>
+        </p>
+       
+      </div>
+
+    </div>
   </footer>
   
 

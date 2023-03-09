@@ -56,13 +56,16 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
-  background: #e3e6f3;
+  padding: 20px 250px;
+  background: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  width: 100%;
   z-index: 9999;
+
 }
 
 #logo {
@@ -71,7 +74,7 @@ body, html {
 
 }
 
-#navbar {
+#navbar { 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,24 +226,28 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 530px;
+  position: relative;
 }
 
 
 .hero {
-
-  margin-top: 100px;
   display: flex;
-  margin: 50px 70px 30px 60px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  left: 270px;
+  padding-top: 30px;
 }
 
 
 
 .hero .content {
-  flex: 1.5;
+  flex: 1.6;
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -251,7 +258,7 @@ body, html {
 }
 
 .hero .self-photo {
-  flex: 1;
+  flex: 1.1;
   color: var(--main-font-color);
   
 }
@@ -476,10 +483,10 @@ body, html {
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
-  padding-top: 150px;;
-  padding-bottom: 100px;
+  margin-top: 125px;;
   gap: 6px;
 }
+
 
 .section-title {
   display: flex;
@@ -527,7 +534,7 @@ body, html {
 .about-me .bio .bio-info {
     font-family: 'League Spartan', serif;
     overflow-x: hidden;
-    width: 60%;
+    width: 42%;
     font-size: 20px;
     line-height: 30px;
     word-wrap: break-word;
@@ -706,7 +713,7 @@ body, html {
 
 /* Skills Section */
 .skills-wrapper {
-  margin-top: 180px;
+  margin-top: 125px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -782,13 +789,14 @@ body, html {
   margin-top: 15px;
   justify-content: center;
   text-align: center;
+  
 }
-
 
 .skills-card img {
   margin-top: 10px;
   width: 45px;
   height: 45px;
+
 }
 
 @media (max-width: 799px) {
@@ -888,22 +896,15 @@ body, html {
 
 
 
-
-
-
-
-
 /* Porfolio */
-.portfolio {
-  max-width: 1200px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.portfolio-container {
+ padding: 50px 0px 125px;
+ width: 100%;
+ display: flex;
  justify-content: center;
- margin: 0 auto;
- padding-top: 150px;;
- margin-bottom: 100px;
-
+ align-items: center;
+ flex-direction: column;
+ margin: 40px auto;
 }
 
 .portfolio-title  {
@@ -938,105 +939,9 @@ body, html {
   
 }
 
-
-.portfolio-filter {
-  display: flex;
-  align-items: center;
-  padding: 50px 0px;
-  text-align: center;
-  justify-content: center;
-  font-size: 14px;  
-}
-
-.portfolio-filter  .portfolio-heading a {
-  padding: 0px 35px;
-  margin: 0 10px;
-  font-size: 20px;
-}
-
-.portfolio-heading .active {
-  color: var(--main-font-color);
-}
-
-.portfolio-filter  a {
-  text-decoration: none;
-  padding: 16px;
-}
-
-.portfolio-filter  a:hover {
-  transition: 200ms ease;
-  color: var(--main-font-color);
-}
-
-/* Portfolio list */
-.portfolio-list {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 90px;
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-container {
-  display: flex;
-  border: 1px solid black;
-
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.portfolio-card {
-  border: 1px solid var(--main-font-color);
-  width: 346px;
-  height: 462px;
-  border-radius: 6px;
-  text-decoration: none;
-  justify-content: center;
-  text-align: center;
-  margin: 20px 5px;
-  
-}
-
-
-.portfolio-card a {
-text-decoration: none;
-vertical-align: middle;
-}
-
-.portfolio-card a:hover {
-  
-}
-
-@media (max-width: 799px) {
-
-}
-
-@media (max-width: 477px) {
-  
-}
-
-
-/* End of Portfolio list */
-/* End of Portfolio*/
-
-/* Porfolio  v2*/
-.portfolio-container {
- padding: 50px 0px 185px;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- margin: 40px auto;
-}
-
-li {
+.filter {
   list-style: none;
+  font-weight: 600;
 }
 
 .portfolio-container ul {
@@ -1044,31 +949,36 @@ li {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
   margin-bottom: 20px;
   gap: 25px;
 }
 
 .portfolio-container ul li {
-  letter-spacing: 1px;
-  padding: 5px 15px;
+  padding: 25px 15px;
   cursor: pointer;
   margin: 5px;
-  border-bottom: 3px solid transparent;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: 'League Spartan' ,sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .portfolio-container ul li.active {
-  border-color: #772fed;
-  color: #8874ef;
+  color: #DA8E03;
+}
+
+.portfolio-container ul li:hover {
+  color: #DA8E03;
 }
 
 .portfolio {
+  max-width: 1200px;
   display: flex;
-
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 30px;
 }
 
 .portfolio .itembox {
@@ -1080,7 +990,8 @@ li {
   margin-right: 20px;
   margin-bottom: 20px;
   gap: 15px;
-  display: block;
+  display: inline-block;
+  
 }
 
 .portfolio .itembox img {
@@ -1129,49 +1040,165 @@ li {
   }
 }
 
-/* @media(max-width: 468px) {
-  .portfolio .itembox {
-    width: 320px;
-    height: 420px;
-  }
-} */
+@media (max-width: 799px) {
+
+}
+
+@media (max-width: 477px) {
+  
+}
 
 
 
 /* Porfolio  v2*/
 
-/* Footer */
-.footer {
-display: flex;
-justify-content: start;
-align-items: left;
-text-align: left;
-padding-bottom: 50px;
-width: 100%;
-height: 100%;
 
-}
 
-.footer-details {
-padding-left: 0;
-top: 0;
 
-}
 
-.footer-details p {
- align-items: left;
-  font-size: 16px;
-  display: block;
-  color: black;
-  
-}
 
-.icons i {
-  margin-top: 15px;
-  margin-right:6px;
-  font-size: 28px;
-  justify-content: center;
-  background-color: #ffffff;
-}
+  .main-footer {
+    background: #e7e7e7;
+    color: #000;
+  }
 
-/* End of Footer */
+
+  .main-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 80%;
+
+  }
+
+
+  .main-footer__upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+
+  .main-footer__row-1 {
+    order: 2;
+  }
+
+  .main-footer__row-2 {
+    order: 1;
+    width: 40%;
+    max-width: 700px;
+
+  }
+
+
+  .main-footer__lower {
+    padding: 40px 0;
+    border-top: 1px solid #444;
+    color: #444;
+    text-align: center;
+    font-size: 14px ;
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .heading-sm {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons  .icon {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-footer__lower {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+
+  .short_description {
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    display: block;
+    margin-block-start: 16px; /* sets margin top of element*/
+    margin-block-end: 16px; /*sets margin bottom of element*/ 
+    margin-inline-start: 0px; /* sets margin on left of element*/
+    margin-inline-end: 0px; /*sets margin on right of element*/
+  }
+
+
+
+  .main-footer__lower .name {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .main-footer__lower p {
+    align-items: center; margin: 0 auto;
+    font-weight: normal;
+    font-size: 14px;
+  }
+   
+
+  @media (max-width: 799px) {
+   
+
+    .main-footer__upper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .main-footer__row-1 {
+      margin-bottom: 60px;
+      order: 1 !important;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-footer__row-2 {
+      margin-bottom: 30px;
+      order: 2 !important;
+      display: flex;
+      flex-direction: column;
+     
+    }
+  }
+
+  @media (max-width: 477px) {
+    .main-container {
+      width: 100%;
+    } 
+
+    .main-footer__row {
+      margin-bottom: 0px;
+    }
+
+    .main-footer__upper {
+      display: block;
+      /* display: flex;
+      flex-direction: column; */
+    }
+
+    .main-footer__row-1 {
+      order: 1 !important;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-footer__row-2 {
+      margin-bottom: 20px;
+      order: 2 !important;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+/* Footer v2 */
