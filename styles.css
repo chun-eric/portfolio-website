@@ -38,6 +38,28 @@ body, html {
 
 }
 
+.btn {
+ background: #facf0f;
+ color: #333;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ display: inline-block;
+ font-weight: 700;
+ border-radius: 5px;
+ box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+ transition: .3s; 
+ width: 30%;
+ padding: 22px 54px;
+ font-size: 18px;
+ border: none;
+
+}
+
+.btn--theme {
+  background: #facf0f;
+  color: #111;
+}
+
 /* -----  Main Container ------ */
 .container {
   min-height: 100%;
@@ -1047,16 +1069,156 @@ body, html {
 @media (max-width: 477px) {
   
 }
-
-
-
-/* Porfolio  v2*/
-
+/* Porfolio */
 
 
 
 
 
+
+
+
+/* Contact Form */
+.contact {
+  background: -o-linear-gradient(to right, rgba(245,245,245,.8), rgba(245,245,245,.8));
+  background-image: url("./images/backgroundpattern-2-svg.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.sec-pad {
+  padding: 190px 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.heading-sec__mb-med {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 33px;
+}
+
+.heading-sec__main {
+  display: block;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.heading-sec__main::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  bottom: 0;
+  background-color: var(--main-font-color);
+  height: 5px;
+  width: 2rem;
+  left: 50%;
+  transform: translateX((-50%));
+  border-radius: 5px;
+}
+
+.heading-sec__main--lt {
+  color: #111;
+  font-weight: 800;
+}
+
+.heading-sec__sub--lt {
+  color: #333;
+}
+
+.heading-sec__sub {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 50%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact__form-container {
+  padding: 40px;
+  max-width: 1200px;
+  text-align: center;
+  width: 70%;
+  border-radius: 5px;
+  background: #fff;
+  margin: 80px auto 0 auto;
+  box-shadow: rgb(100, 100, 111 / 20%); /* opacity 20%*/
+}
+
+.contact__form-field {
+  margin-bottom: 60px;
+}
+
+.contact__form-label {
+  color: #b1b1b1;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: block;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.contact__form-input {
+  color: #818181;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  font-size: 16px;
+  letter-spacing: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  background: #e4e4e4;
+  outline: none;
+}
+
+ textarea::placeholder {
+  color: #818181;
+}
+
+@media (max-width: 799px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .contact__form-field {
+    margin-bottom: 36px;
+  }
+  .heading-sec__sub {
+    width: 70%;
+  }
+  .contact__form-container {
+    margin-top: 60px;
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 477px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+
+
+/* Footer */
   .main-footer {
     background: #e7e7e7;
     color: #000;
@@ -1150,27 +1312,30 @@ body, html {
 
   @media (max-width: 799px) {
    
-
     .main-footer__upper {
       display: flex;
       flex-direction: column;
       margin-top: 0px;
       padding-bottom: 0px;
+   
     }
+
 
     .main-footer__row-1 {
       margin-bottom: 60px;
       order: 1 !important;
       display: flex;
       flex-direction: column;
+      display: block !important;
     }
     .main-footer__row-2 {
       margin-bottom: 30px;
       order: 2 !important;
       display: flex;
       flex-direction: column;
-     
+      display: block !important;
     }
+    
   }
 
   @media (max-width: 477px) {
@@ -1182,23 +1347,32 @@ body, html {
       margin-bottom: 0px;
     }
 
-    .main-footer__upper {
-      display: block;
-      /* display: flex;
-      flex-direction: column; */
+     .main-footer__upper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      padding-bottom: 0px;
+    
     }
 
     .main-footer__row-1 {
       order: 1 !important;
       display: flex;
       flex-direction: column;
+      display: block !important;
+      width: 100%;
     }
     .main-footer__row-2 {
       margin-bottom: 20px;
       order: 2 !important;
       display: flex;
       flex-direction: column;
+      display: block !important;
+      width: 100%;
+    }
+
+    .short_description {
+      margin-right: 5px;
     }
   }
-
-/* Footer v2 */
+/* Footer */
