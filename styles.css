@@ -651,7 +651,7 @@ body, html {
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 125px;;
+  margin-top: 90px;;
   gap: 6px;
 }
 
@@ -702,10 +702,11 @@ body, html {
 .about-me .bio .bio-info {
     font-family: 'League Spartan', serif;
     overflow-x: hidden;
-    width: 42%;
-    font-size: 20px;
+    width: 50%;
+    font-size: 19px;
     line-height: 30px;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
+    flex-wrap: wrap;
     font-weight: normal;
     background-color: #fff;
     align-items: center;
@@ -714,7 +715,7 @@ body, html {
     color: #43414b;
     line-height: 1.7;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     
 }
 
@@ -909,7 +910,7 @@ body, html {
 
 /* Skills Section */
 .skills-wrapper {
-  margin-top: 125px;
+  margin-top: 165px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1114,13 +1115,13 @@ body, html {
 
 /* Porfolio */
 .portfolio-container {
- padding: 50px 0px 125px;
+ padding: 150px 0px 125px;
  width: 100%;
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: column;
- margin: 40px auto;
+ margin: 0 auto;
 }
 
 .portfolio-title  {
@@ -1195,32 +1196,37 @@ body, html {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 30px;
+  float: left;
 }
 
 .portfolio .itembox {
   position: relative;
   width: 346px;
   height: 460px;
-  margin: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 25px;
   gap: 15px;
   display: inline-block;
   border: 15px solid rgb(31, 30, 30);
   border-radius: 10px;
+  z-index: 9 ;
   
 }
 
 .portfolio .itembox img {
   position: absolute;
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  cursor: pointer;
-  border-radius: 1px;
+  height: 430px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  object-position: top center;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+  z-index: -1;
 }
+
+
 
 .portfolio-container .portfolio .itembox.show {
   animation: show 0.5s ease 0.2s 1 forwards;
@@ -1238,10 +1244,9 @@ body, html {
  
   }
 
-
   100% {
     transform: scale(1);
-   
+
   }
 }
 
