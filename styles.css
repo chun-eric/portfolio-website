@@ -269,6 +269,7 @@ body, html {
   background-image: url('./images/background\ pattern.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center ;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -280,7 +281,6 @@ body, html {
 .hero {
   display: flex;
   max-width: 1200px;
-  max-height: 100vh;
   justify-content: space-around;
   align-items: center;
   justify-content: center;
@@ -316,7 +316,7 @@ body, html {
 }
 
 .hero .content .job {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .hero .content .name, 
@@ -329,9 +329,9 @@ body, html {
 }
 
 .hero .content .value {
-  font-size: 17px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .hero .content .name {
@@ -348,8 +348,36 @@ body, html {
   font-weight: normal;
   line-height: 1.4;
   font-size: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
+
+
+.hero .content .icons {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-bottom: 15px;
+
+}
+
+.hero .content .icons a:link,
+.hero .content .icons a:visited,
+.hero .content .icons a:hover,
+.hero .content .icons a:active
+{
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+  margin-right: 20px;
+
+}
+
+.hero .content .icons a i {
+  font-size: 30px;
+}
+
 
 
 .hero .content .btn.hero-button  {
@@ -389,6 +417,7 @@ body, html {
   object-fit: contain;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 
 
