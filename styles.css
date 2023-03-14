@@ -126,34 +126,34 @@ body, html {
 
 }
 
-.header-container {
+/* .header-container {
   max-width: 1200px;
   display: flex;
   align-items: center;
   margin: 0px;
   justify-content: space-between;
   
-}
+} */
 
-.header-container #logo {
+ #logo {
   text-decoration: none;
   border-radius: 50%;
 
 }
 
-.header-container #navbar { 
+ #navbar { 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-container #navbar li {
+ #navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-.header-container #navbar li a {
+ #navbar li a {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 600;
