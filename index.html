@@ -286,25 +286,33 @@
     
       <!-- Contact Form-->
       <div class="contact__form-container">
-        <form action="https://formsubmit.co/emaildevelopereric@gmail.com" class="contact__form" method="post">
-          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <form action="https://formspree.io/f/xqkolwqa" class="contact__form" method="POST" id="form">
+          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
           <input type="hidden" name="_subject" value="New Email Yay!">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input required class="contact__form-input" placeholder="Enter your name" type="text" name="name" id="name">
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input required class="contact__form-input" placeholder="Enter your email" type="text" name="email" id="email">
+            <div class="contact__form-field" id="email-input-group">
+              <label class="contact__form-label" for="email" id="email-label">Email</label>
+              <input required class="contact__form-input" id="email" placeholder="Enter your email" type="text" name="email" spellcheck="false" onkeyup="validateEmail()">
+              <span id="email-error"></span>
+              <span id="email-success"></span>
             </div>
             <div class="contact__form-field">
               <label class="contact__form-label" for="message">Message</label>
-              <textarea required name="message" id="message" cols="30" rows="10" placeholder="Enter your message" class="contact__form-input"></textarea>
+              <textarea required name="message" cols="30" rows="10" placeholder="Enter your message" class="contact__form-input" id="message"></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">Submit</button>
+            <button type="submit" id="submit--button" class="btn btn--theme submit--btn">Submit</button>
         </form>
       </div>
 
+      <!-- 
+
+
+
+
+      -->
       
 
 

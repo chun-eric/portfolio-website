@@ -1460,6 +1460,49 @@ body, html {
   color: #818181;
 }
 
+
+#email-input-group {
+  position: relative;
+}
+
+
+#email {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+#email-error {
+    position: absolute;
+    top: 110%;
+    left: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+    transition: top 0.5s;
+}
+
+#email-success {
+  position: absolute;
+  top: 110%;
+  left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(64, 179, 11);
+  transition: top 0.5s;
+}
+
+.submit--btn:hover {
+  transform: translateY(1.2);
+}
+
+.submit--btn:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+
 @media (max-width: 1100px) {
   .main-container {
     width: 100%;
