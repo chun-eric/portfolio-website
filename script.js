@@ -17,7 +17,7 @@ close.addEventListener('click', () => {
 })
 
 
-
+/* adding navbar hover effect and underline */ 
 
 
 
