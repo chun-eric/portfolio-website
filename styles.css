@@ -186,7 +186,7 @@ background: var(--secondary-brand-color-400);
 }
 
 #navbar li a:hover {
-  transition: 0.24s ease;
+  transition: 0.3s ease;
 }
 
 
@@ -211,6 +211,7 @@ background: var(--secondary-brand-color-400);
   background-color: var(--secondary-brand-color-900);
   left: 20px;
   bottom: -4px;
+  transition: all 0.3s ease-in;
 }
 
 #navbar li .moon {
