@@ -34,37 +34,95 @@ close.addEventListener('click', () => {
 //selecting elements
 const gallery = document.querySelector(".gallery");
 const itemboxes = document.querySelectorAll(".itembox");
+const filterButtons = document.querySelectorAll(".filter")
+
+// es6 style filtering portfolio
+filterButtons.forEach((btn) => {
+    // add a click event
+    btn.addEventListener("click", () => {
+
+        // returns the value of the data-filter eg."newsletter, transactional etc..."
+        // setting the variables
+        const filter = btn.dataset.filter;
 
 
-// Click events
-gallery.addEventListener("click", (e) => {
-    if (e.target.classList.contains("filter")) {
-        //#1 removing the active class in original state
-        gallery.querySelector(".active").classList.remove("active");
+        // first remove the active class on all buttons
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
 
-        //#2 adding the active class to its new clicked state
-        e.target.classList.add("active")
+        // then add the active class on the clicked button
+        btn.classList.add("active");
 
-        //#3 getting the value from data-filter attribute
-        const filterValue = e.target.getAttribute("data-filter");
+        // looping through the itemboxes node list
+        itemboxes.forEach((item) => {
+            // checking if the item is the "all" button
+            if(filter === "all") {
+                item.style.display = "block";
+                item.style.opacity = "1";
+                item.style.transform ="scale(1)";
+                // item.style.transition = `"${filter} 0.3s ease-in 0.1s"`
+              
+             // if the item is not "all" button   
+            } else {
+                // if the item contains the filter
+                // display block otherwise display none
+                item.classList.contains(filter) ? 
+                (item.style.display = "block", 
+                item.style.transition = `"${filter} 0.3s ease-in 0.1s"` ) : 
+                (item.style.display = "none");
 
-        //#4 Looping through all the itemboxes & checking if each item contains filterValue
-
-        //#5 Adding a show class and removing a hide class
-        itemboxes.forEach(item => {
-            if(item.classList.contains(filterValue) || filterValue === "all") {
-                item.classList.add("show");
-                item.classList.remove("hide")
-            } else 
-            {
-                item.classList.add("hide")
-                item.classList.remove("show")
-               
+                // if the item is not "all" 
+                item.style.opacity = "0";
+                // item.style.transform = "scale(0.5);"
             }
-        })
-    }
+        });
 
-});
+        // delaying fade in using a setTimeout after 400ms
+        setTimeout(() => {
+            itemboxes.forEach((item) => {
+                // if items are visible
+                if(item.style.display !== "none") {
+                    item.style.opacity = "1";
+                    item.style.transform = "scale(1)";
+                    
+                }
+            }, 400);
+        },);
+
+    });
+} );
+
+
+
+
+// // Filtering Portfolio v2 
+// gallery.addEventListener("click", (e) => {
+//     if (e.target.classList.contains("filter")) {
+//         //#1 removing the active class in original state
+//         gallery.querySelector(".active").classList.remove("active");
+
+//         //#2 adding the active class to its new clicked state
+//         e.target.classList.add("active")
+
+//         //#3 getting the value from data-filter attribute
+//         const filterValue = e.target.getAttribute("data-filter");
+
+//         //#4 Looping through all the itemboxes & checking if each item contains filterValue
+
+//         //#5 Adding a show class and removing a hide class
+//         itemboxes.forEach(item => {
+//             if(item.classList.contains(filterValue) || filterValue === "all") {
+//                 item.classList.add("show");
+//                 item.classList.remove("hide")
+//             } else 
+//             {
+//                 item.classList.add("hide")
+//                 item.classList.remove("show")
+               
+//             }
+//         })
+//     }
+// });
+
 
 
 
