@@ -115,8 +115,11 @@
     <section id="hero-background">
         <div class="hero">
               <div class="content">
-                  <h2 class="hello">Hi, I'm</h2>
-                  <h1 class="name">Eric</h1>
+                  <h2 class="hello">Hello, I'm</h2>
+                  <div class="image-container">
+                    <img class="img-background" src="./images/yellow-transparent.png" alt="blue background">
+                    <h1 class="name">Eric Chun</h1>
+                  </div>
                   <h3 class="job"> An HTML Email Developer</h3>
                   <p class="value"> I specialize in the creation and deployment of email marketing campaigns.</p>
                   <div class="icons">
@@ -131,9 +134,12 @@
                         </a>
                      
                   </div>
-                  <button class="btn .btn--theme">
+                  <a href="#portfolio">
+                    <button class="btn .btn--theme" >
                       Portfolio
                   </button>
+                  </a>
+                 
               </div>
               <div class="self-photo">
                 <img src="./images/hero-image-transparent.png" alt="self-logo">
@@ -155,7 +161,9 @@
 
         <div class="bio">
           <p class="bio-info">From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
-          <button class="btn btn--theme">Get In Touch</button>
+          <a href="#contact">
+            <button class="btn btn--theme">Get In Touch</button>
+          </a>
         </div>
     
       </div>
@@ -284,7 +292,7 @@
 
 
   <!----- Contact Me Form ------->
-  <section id="contact" class="contact sec-pad">
+  <section id="contact" class="contact section-padding">
 
     <div class="main-container">
 
@@ -314,11 +322,11 @@
             </div>
             <button type="submit" id="submit--button" class="btn btn--theme submit--btn">Submit</button>
         </form>
-
       </div>
 
     </div>
   </section>
+
 
 
   <!-- Footer v2-->
@@ -342,7 +350,10 @@
         </div>
 
         <div class="main-footer__row main-footer__row-2">
-          <h2 class="heading-sm">Eric Chun</h2>
+          <div class="blue-image-background">
+            <img src="" alt="">
+            <h2 class="heading-sm">Eric Chun</h2>
+          </div>
           <p class="short_description">An Email Developer focused on delivering well designed & well tested emails.</p>
         </div>
 
@@ -351,7 +362,7 @@
       <div class="main-footer__lower">
         <p >
           &#169; Copyright
-          <script>document.write(new Date().getFullYear())</script>. Made by  <a class="name" href="" target="_blank"> Eric Chun</a>
+          <script>document.write(new Date().getFullYear())</script>. Website made by  <a class="name" href="" target="_blank"> Eric Chun</a>
         </p>
       </div>
 

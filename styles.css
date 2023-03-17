@@ -21,6 +21,7 @@
   --primary-brand-color-400: #00baff;
   --primary-brand-color-600: #00a2ff;
   --primary-brand-color-800: #00a2ff;
+  --primary-brand-color-900: #0499f0;
   --primary-brand-color-alternate-400: #fff;
   --primary-brand-color-alternate-600: #fff;
   --primary-brand-color-alternate-800: #fff;
@@ -39,6 +40,7 @@
   --primary-opposite-background-color-400: #0b212a;
   --primary-opposite-text-color-800: #202730;
   --primary-opposite-text-color-200: #7990a1;
+  --primary-opposite-text-color-300: #63707a;
   --primary-opposite-link-color: var(--primary-brand-color-400);
   --primary-opposite-link-hover-color: var(--primary-brand-color-800);
 }
@@ -397,8 +399,7 @@ background: var(--secondary-brand-color-400);
   font-size: 30px ;
 }
 
-.hero .content .name, 
-.hero .content span {
+.hero .content .name {
   font-size: 80px;
   color: var(--primary-brand-color-600);
   letter-spacing: 2px;
@@ -411,14 +412,31 @@ background: var(--secondary-brand-color-400);
   padding-bottom: 10px;
 }
 
+.hero .content .image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: -70px;
+}
+
+.hero .content .name-container .img-background {
+  width: 520px;
+  height: 170px;
+}
+
 .hero .content .name {
-  align-items: left;
+  position: absolute;
+  top: 32%;
+  left: 30% ;
+  transform: translate(-32%, -30%);
+  color: var(--primary-opposite-background-color-400);
 }
 
 .hero .content .job {
-  font-size: 24px;
+  font-size: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: var(--primary-brand-color-900);
 }
 
 .hero .content .value {
@@ -1379,16 +1397,16 @@ background: var(--secondary-brand-color-400);
 
 /* Contact Form */
 .contact {
-  background: -o-linear-gradient(to right, rgba(245,245,245,.8), rgba(245,245,245,.8));
-  background-image: url("./images/backgroundpattern-2-svg.jpg");
+  background: -o-linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(241, 240, 240, 0.8));
+  background-image: url("./images/background-pattern-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
 }
 
-.sec-pad {
-  padding: 150px 0;
+.section-padding {
+  padding: 130px 0;
 }
 
 .main-container {
@@ -1399,7 +1417,6 @@ background: var(--secondary-brand-color-400);
 
 .heading-sec__mb-med {
   display: block;
-
   margin-bottom: 33px;
   font-family: inherit;
   
@@ -1617,7 +1634,6 @@ background: var(--secondary-brand-color-400);
 
   .heading-sm {
     font-size: 22px;
-    text-transform: uppercase;
     letter-spacing: 1px;
   }
 
