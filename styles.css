@@ -1303,6 +1303,10 @@ body, html {
   
 }
 
+.portfolio .itembox:hover {
+  transform: translateY(-10px);
+}
+
 .portfolio .itembox img {
   position: absolute;
   width: 100%;
