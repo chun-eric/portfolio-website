@@ -54,7 +54,7 @@
   font-family: 'League Spartan', sans-serif;
   /* font-family: 'Open Sans', sans-serif; */
   font-weight: 700;
-  color: var(--primary-opposite-background-color-300);
+  color: var(---);
 }
 
 body, html {
@@ -69,8 +69,8 @@ body, html {
 
 /* universal button class */
 .btn {
- background: var(--secondary-brand-color-400);
- color: var(--primary-text-color-800);
+ background: var(--primary-brand-color-400);
+ color: var(--primary-brand-color-alternate-400);
  text-transform: uppercase;
  letter-spacing: 1px;
  display: inline-block;
@@ -93,8 +93,8 @@ body, html {
 }
 
 .btn-contact {
-background: var(--secondary-brand-color-400);
- color: var(--primary-text-color-800);
+  background: var(--primary-brand-color-400);
+ color: var(--primary-background-color);
  display: inline-block;
  font-weight: 700;
  border-radius: 5px;
@@ -116,9 +116,8 @@ background: var(--secondary-brand-color-400);
 
 
 .btn--theme {
-  background: var(--secondary-brand-color-400);
-  color: var(--primary-opposite-background-color-400);
-  
+  background: var(--primary-brand-color-400);
+  color: var(--primary-brand-color-alternate-400);
 }
 
 
@@ -187,6 +186,11 @@ background: var(--secondary-brand-color-400);
   font-size: 20px;
 }
 
+#navbar li .btn-contact {
+  color: var(--primary-brand-color-alternate-400);
+  background-color: var(--primary-brand-color-400);
+}
+
 #navbar li a:hover {
   transition: 0.3s ease;
 }
@@ -197,7 +201,7 @@ background: var(--secondary-brand-color-400);
 #navbar li a.skills-header:hover,
 #navbar li a.portfolio-header:hover
 {
-  color: var(--secondary-brand-color-900);
+  color: var(--primary-brand-color-600);
 }
 
 /* underline and underline on hover */
@@ -210,20 +214,20 @@ background: var(--secondary-brand-color-400);
   height: 2px;
   width: 40%;
   position: absolute;
-  background-color: var(--secondary-brand-color-900);
+  background-color: var(--primary-brand-color-400);
   left: 20px;
   bottom: -4px;
   transition: all 0.3s ease-in;
 }
 
-#navbar li .moon {
+/* #navbar li .moon {
   font-size: 17px;
 }
 
 #navbar li .moon:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in;
-}
+} */
 
 #close {
   display: none;
@@ -300,10 +304,10 @@ background: var(--secondary-brand-color-400);
    color: #000;
  }
 
- #mobile .moon {
+ /* #mobile .moon {
    padding: 0 5px;
    text-decoration: none;
- }
+ } */
 
  #close {
    display: initial;
@@ -366,7 +370,6 @@ background: var(--secondary-brand-color-400);
 }
 
 
-
 .hero .content {
   flex: 1.4;
   display: flex;
@@ -391,7 +394,18 @@ background: var(--secondary-brand-color-400);
 
 .hero .content .name {
   margin-top: 25px;
-  font-size: 68px;
+  font-size: 45px;
+  letter-spacing: 0.2px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 900;
+  ;
+}
+
+.hero .content .hero-image {
+  margin: 13px 0px;
+  margin-left: 13px;
+  width: 370px;
+  height: auto;
 }
 
 .hero .content .job {
@@ -419,9 +433,10 @@ background: var(--secondary-brand-color-400);
   left: -70px;
 }
 
-.hero .content .name-container .img-background {
+/* .hero .content .name-container img {
   width: 520px;
   height: 170px;
+  font-family: 'League Spartan';
 }
 
 .hero .content .name {
@@ -430,13 +445,13 @@ background: var(--secondary-brand-color-400);
   left: 30% ;
   transform: translate(-32%, -30%);
   color: var(--primary-opposite-background-color-400);
-}
+} */
 
 .hero .content .job {
   font-size: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--primary-brand-color-900);
+  color: var(--primary-opposite-background-color-300);
 }
 
 .hero .content .value {
@@ -1621,6 +1636,11 @@ background: var(--secondary-brand-color-400);
 
   }
 
+  .main-footer__row-2 .footer-name-background .footer-name-image {
+    width: 140px;
+    height: auto;
+ 
+  }
 
   .main-footer__lower {
     padding: 40px 0;
@@ -1635,10 +1655,12 @@ background: var(--secondary-brand-color-400);
   .heading-sm {
     font-size: 22px;
     letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .social-icons {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .social-icons  .icon {
@@ -1655,6 +1677,7 @@ background: var(--secondary-brand-color-400);
 
   .short_description {
     margin-top: 20px;
+    padding-left: 13px;
     color: #000;
     font-size: 16px;
     font-weight: 600;
@@ -1681,7 +1704,6 @@ background: var(--secondary-brand-color-400);
    
 
   @media (max-width: 799px) {
-   
     .main-footer__upper {
       display: flex;
       flex-direction: column;

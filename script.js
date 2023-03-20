@@ -180,11 +180,15 @@ function validateEmail() {
 
 
 // changing button effect when clicked 
-submitButton.addEventListener("click", () => {
+    submitButton.addEventListener("click", () => {
     // adding a button effect
     submitButton.classList.add("submit--btn");
 })
 
-form.addEventListener("submit", () => {
-    form.reset();
-})
+
+// clear all form fields after submit
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
