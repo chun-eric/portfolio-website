@@ -83,6 +83,7 @@ body, html {
  font-size: 18px;
  border: none;
  cursor: pointer;
+ text-decoration: none;
 
 }
 
@@ -115,10 +116,6 @@ body, html {
 }
 
 
-.btn--theme {
-  background: var(--primary-brand-color-400);
-  color: var(--primary-brand-color-alternate-400);
-}
 
 
 
@@ -426,9 +423,9 @@ body, html {
   padding-bottom: 10px;
 }
 
-.hero .content .image-container {
+.hero .content .hero-image {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: auto;
   left: -70px;
 }
@@ -519,8 +516,6 @@ body, html {
     justify-content: center;
   }
 
-
-
   .hero {
     margin-top: 130px;
     padding: 30px;
@@ -544,7 +539,7 @@ body, html {
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
    }
 
@@ -554,53 +549,66 @@ body, html {
 
 }
 
-  .hero .content .name,
-  .hero .content span {
-   font-size: 65px;
+
+ .hero .content .hero-image {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  left: 0px;
+}
+
+
+.hero .content .job {
+  margin-top: 20px;
+  font-size: 30px;
   }
 
+
+.hero .content .value {
+font-weight: 400;
+font-size: 20px;
+align-items: center;
+padding-top: 10px;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+line-height: 1.4;
+text-align: center;
+}
+
+
+.hero .self-photo {
+padding-left: 0px;
+}
+
+
+.hero .self-photo img {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.content  .btn.btn--theme  {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  text-decoration: none !important;
+}
   
-  .hero .content .job {
-    margin-top: 20px;
-    font-size: 36px;
-   }
 
-   .hero .content .value {
-    font-weight: 400;
-    font-size: 20px;
-    align-items: center;
-    padding-top: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    line-height: 1.4;
-    text-align: center;
-   }
-
-
-   .hero .self-photo {
-    padding-left: 0px;
-   }
-
-
-  .hero .self-photo img {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border: none;
-    padding-bottom: 10px;
-  }
-
-  .content .btn  {
-    display: block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: fit-content;
+  .content .btn.no-underline {
+    text-decoration: none;
   }
   
 }
@@ -608,141 +616,225 @@ body, html {
 
 
 @media (max-width: 799px) {
-   .hero {
-    margin-top: 30px;
-    padding: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    text-align: center;
-   }
-
-   .hero .content {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 80%;
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-   }
-
-   .hero .self-photo {
-    margin: 0 auto;
-    margin-left: 50px;
-    margin-right: 60px;
-    margin-top: 260px;
+  #hero-background {
+    padding: 100px 0px;
+     width: 100vw;
+     height: 1200px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
    }
  
-   .hero .self-photo img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    align-items: center;
-    object-fit: contain;
-    margin: 0 auto;
-    border: none;
-  
-  
+   .hero {
+     margin-top: 130px;
+     padding: 30px;
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-bottom: 20px;
+     margin-bottom: 30px;
+     height: 100%;
+     margin: 0 auto;
    }
-
-   .hero .content .name,
-   .hero .content span {
-    font-size: 55px;
+ 
+   .hero .content {
+     padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     width: 80%;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     text-align: center;
+    }
+ 
+ 
+   .hero .content .hello {
+     padding-top: 30px;
+ 
+ }
+ 
+ 
+  .hero .content .hero-image {
+   display: block;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   margin-top: 20px;
+ }
+ 
+ 
+ .hero .content .job {
+   margin-top: 20px;
+   font-size: 30px;
    }
-
-   .hero .content .value {
-    font-weight: 400;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    line-height: 1.4;
-    text-align: center;
-   }
-
-   .content .btn {
-    width: fit-content;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+ 
+ 
+ .hero .content .value {
+ font-weight: 400;
+ font-size: 20px;
+ align-items: center;
+ padding-top: 10px;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 0 auto;
+ line-height: 1.4;
+ text-align: center;
+ }
+ 
+ 
+ .hero .self-photo {
+ padding-left: 0px;
+ }
+ 
+ 
+ .hero .self-photo img {
+   display: block;
+   align-items: center;
+   justify-content: center;
+   width: 400px;
+   height: 400px;
+   margin: 0 auto;
+   border: none;
+   padding-bottom: 10px;
+ }
+ 
+ .content  .btn.btn--theme  {
+   display: block;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   width: fit-content;
+   text-decoration: none !important;
+ }
+   
+ 
+   .content .btn.no-underline {
+     text-decoration: none;
    }
 }
 
 
-@media (max-width: 477px) {
-  .hero {
-    margin-top: 30px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   }
-
-   .hero .content {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 80%;
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-   }
-
-   .hero .content .name,
-   .hero .content span {
-    font-size: 44px;
-    padding-top: 10px;
-    text-align: center;
+@media (max-width: 599px) {
+  #hero-background {
+    /* padding: 100px 0px; */
+     /* width: 100vw;
+     height: 1200px; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
    }
  
-   .hero .self-photo img {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 30%;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    margin: 0 auto;
-    border: none;
+   .hero {
+     margin-top: 130px;
+     /* padding: 30px; */
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     /* padding-bottom: 20px; */
+     margin-bottom: 30px;
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+   }
+ 
+   .hero .content {
+     padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     width: 80%;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     text-align: center;
+    }
+ 
+ 
+   .hero .content .hello {
+     padding-top: 30px;
+ 
+ }
+ 
+ 
+  .hero .content .hero-image {
+   display: block;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   margin-top: 20px;
+   width: 320px;
   
+ }
+ 
+ 
+ .hero .content .job {
+   margin-top: 20px;
+   font-size: 30px;
    }
+ 
+ 
+ .hero .content .value {
+ font-weight: 400;
+ font-size: 20px;
+ align-items: center;
+ padding-top: 10px;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 0 auto;
+ line-height: 1.4;
+ text-align: center;
+ }
+ 
+ 
+ .hero .self-photo {
+ padding-left: 0px;
+ }
 
+   
+}
 
-   .hero .content .value {
-    font-weight: 400;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+@media (max-width: 477px)  {
+  .hero-image {
     margin: 0 auto;
-    line-height: 1.4;
-    text-align: center;
-   }
+    width: 100%;
+ 
+  }
 
-   .content .btn {
-    width: fit-content;
+  .hero {
+    width: 477px;
+    margin: auto;
+    height: auto;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    padding-bottom: 40px;
+  }
+
+  .hero .content {
+    padding-right: 0px;
+  } 
+
+  .hero .content .hero-image {
+    display: block;
     align-items: center;
-    text-align: center;
     justify-content: center;
-   }
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+ 
 }
 
 /* End of Hero Section */
