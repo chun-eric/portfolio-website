@@ -1110,7 +1110,7 @@ html {
   position: relative;
   border: 0.3px solid rgb(233, 231, 231);
 
-  background: linear-gradient(to right, #ffffff, #edf6fb);
+  background: linear-gradient(to right, #ffffff, #f9fdff);
 }
 #skills:hover > .skill-cards::after {
   opacity: 1;
