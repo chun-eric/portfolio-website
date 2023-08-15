@@ -855,6 +855,10 @@ html {
   margin-bottom: 30px;
 }
 
+.btn.about {
+  margin-top: 30px;
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
   .about-me .bio {
@@ -886,7 +890,7 @@ html {
     padding: 30px;
     display: flex;
     width: 85%;
-    height: 550px;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -926,17 +930,15 @@ html {
 
   .about-me .bio {
     padding-top: 10px;
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     width: 100%;
-    height: 80%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-left: 0px !important;
     padding-left: 0px !important;
+    overflow-y: hidden;
   }
 
   .about-me .bio .bio-info {
@@ -951,17 +953,16 @@ html {
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 500px) {
   .about-me {
     margin-top: 30px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 160px;
   }
 
   .section-title {
@@ -973,7 +974,6 @@ html {
 
   .section-title .title {
     align-items: center;
-    margin-bottom: 10px;
   }
 
   .about-me .bio {
@@ -992,26 +992,34 @@ html {
 
   .about-me .bio .bio-info {
     text-align: center;
-    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about-me .bio button {
     align-items: center;
     justify-content: center;
   }
-
+  .section-title .title {
+    display: block;
+    width: 100%;
+  }
   .section-title .title::after {
     content: ' ';
     position: absolute;
     bottom: 0;
-    left: 30%; /* sets to 35% left of the parent container */
+    left: 40%; /* sets to 35% left of the parent container */
     height: 4px;
-    width: 60%; /* sets underline width to 50% of parent element */
+    width: 40%; /* sets underline width to 50% of parent element */
     transform: translateX(
       -30%
     ); /* this allows us to keep the same x position relative to its parent when resizing */
     background-color: var(--primary-brand-color-400);
     border-radius: 10px;
+  }
+  .btn.about {
+    margin-bottom: 30px;
   }
 }
 /* End of About me */
@@ -1033,7 +1041,7 @@ html {
   justify-content: center;
   text-align: center;
   vertical-align: middle;
-  margin: 40px 0 40px 0;
+  margin: 30px 0 40px 0;
   height: 80px;
   margin-bottom: 50px;
 }
@@ -1063,7 +1071,7 @@ html {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px,280px));
+  grid-template-columns: repeat(3, minmax(250px, 280px));
   justify-content: center;
   gap: 10px;
   text-align: center;
@@ -1083,18 +1091,16 @@ html {
   position: relative;
   border: 0.3px solid rgb(233, 231, 231);
 
-  background: linear-gradient(to right,   #eff7e9, #00a2ff, );
+  background: linear-gradient(to right, #ffffff, #edf6fb);
 }
 #skills:hover > .skill-cards::after {
   opacity: 1;
 }
 
-
-
 .skills-card::before,
 .skills-card::after {
   border-radius: inherit;
-  content: "";
+  content: '';
   height: 100%;
   left: 0px;
   opacity: 0;
@@ -1110,33 +1116,28 @@ html {
 
 .skills-card::before {
   background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y), 
-    #abe0ff,
+    400px circle at var(--mouse-x) var(--mouse-y),
+    #cbecff,
     transparent 20%
   );
 
   z-index: 3;
 }
 
-
 .skills-card::after {
   background: radial-gradient(
-    200px circle at var(--mouse-x) var(--mouse-y), 
+    200px circle at var(--mouse-x) var(--mouse-y),
     #72cbff,
-     transparent 20%
+    transparent 20%
   );
-  
+
   z-index: 1;
 }
-
-
 
 .skill-cards .items {
   align-items: center;
   justify-content: center;
   z-index: 5;
- 
- 
 }
 .skills-card p {
   font-weight: 800;
@@ -1161,13 +1162,11 @@ html {
   .skills-container {
     max-width: 1100px !important;
     grid-template-columns: repeat(2, 300px);
-   align-items: center;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    margin: 50px auto; 
+    margin: 50px auto;
   }
-
- 
 }
 
 @media (max-width: 799px) {
@@ -1180,7 +1179,6 @@ html {
     margin: 40px 0 40px 0;
     margin-bottom: 20px;
   }
-
 
   .skills-wrapper .skills-title .title {
     /* display: block; */
@@ -1253,7 +1251,6 @@ html {
     border-radius: 10px;
   }
 
- 
   .skills-card {
     display: block !important;
     width: 100%;
@@ -1471,7 +1468,7 @@ html {
     justify-content: center;
     margin: 0 auto;
   } */
-}
+
 /* Porfolio */
 
 /* Contact Form */
