@@ -1025,6 +1025,25 @@ html {
 /* End of About me */
 
 /* Skills Section */
+#skills {
+  position: relative;
+}
+
+#skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  pointer-events: none;
+  background-image: url('https://i.ibb.co/m6QkCm7/background-pattern-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .skills-wrapper {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1478,7 +1497,7 @@ html {
     rgba(255, 255, 255, 0.8),
     rgba(241, 240, 240, 0.8)
   );
-  background-image: url('./images/background-pattern-4.jpg');
+  background-image: url('https://i.ibb.co/48tfNHB/background-pattern-4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
