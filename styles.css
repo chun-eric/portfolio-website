@@ -112,6 +112,9 @@ html {
   transition: 300ms ease-in;
 }
 
+.btn.portfolio.btn {
+}
+
 /* -----  Main Container ------ */
 .container {
   min-height: 100%;
@@ -128,6 +131,7 @@ html {
   display: flex;
   align-items: center;
   background: #ffffff;
+
   padding: 20px 90px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   position: fixed;
@@ -344,6 +348,7 @@ html {
   align-items: center;
   justify-content: center;
   margin: 0 50px;
+  margin-top: 140px;
 }
 
 .hero .content {
@@ -474,7 +479,7 @@ html {
 
 /* --- Media Queries ---- */
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   #hero-background {
     padding: 100px 0px;
     width: 100vw;
@@ -555,6 +560,7 @@ html {
     margin: 0 auto;
     border: none;
     padding-bottom: 10px;
+    padding-top: 40px;
   }
 
   .content .btn.btn--theme {
@@ -647,11 +653,12 @@ html {
     display: block;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 500px;
     height: 400px;
     margin: 0 auto;
     border: none;
     padding-bottom: 10px;
+    padding-top: 40px;
   }
 
   .content .btn.btn--theme {
